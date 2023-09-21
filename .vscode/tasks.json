@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "command": "npm run build",
+            "type": "shell",
+            "windows": {
+                "command": "npm run build"
+            },
+            "label": "build"
+        }
+    ]
+}

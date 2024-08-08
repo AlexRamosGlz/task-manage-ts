@@ -1,0 +1,14 @@
+service: users-api
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  api:
+    handler: dist/handler.handler
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-offline
